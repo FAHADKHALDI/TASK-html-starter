@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <title>Porsche Club</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px;
+    }
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <img src="/w3images/avatar_smoke.jpg" style="width: 100%" />
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a
+        href="#photos"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>PHOTOS</p>
+      </a>
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="
+          w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small
+        "
+      >
+        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important"
+          >HOME</a
+        >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >ABOUT</a
+        >
+        <a
+          href="#photos"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >PHOTOS</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small"></span> Welcome to Porsche Club!
+        </h1>
+        <p>Porsche's World</p>
+        <img
+          src="https://assets.porsche.com/-/media/Project/PCOM/SharedSite/PorscheMuseum/01Home/16-9_Startseite_003-Content_Info_Fuehrungen.jpg?rev=8de3c9bcf52642d980251200eca929ec"
+          alt="boy"
+          class="w3-image"
+          width="992"
+          height="1108"
+        />
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Porsche Club</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p>
+          The Porsche Club organization is one of the largest automotive
+          communities in the world; 620 official Clubs and approximately 180,000
+          members in over 68 countries. You are entitled to a one-year
+          complimentary membership at the Porsche Club. As a member of the
+          Porsche Club, you have the opportunity to compete with other
+          enthusiasts, to participate in rallies, autocross meets and tours, and
+          to share thoughts with like-minded people. You will also have the
+          opportunity to attend a variety of social get-togethers, club meetings
+          and factory tours, some of which are designed for the whole family to
+          enjoy.
+        </p>
+        <h3 class="w3-padding-16 w3-text-light-grey">Membership Benefits</h3>
+        <p class="w3-wide">Events & Activities</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
+        </div>
+        <p class="w3-wide">Discounts</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 85%"></div>
+        </div>
+        <p class="w3-wide">Technical Advice</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 80%"></div>
+        </div>
+        <br />
+
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150,000+</span><br />
+            Membership
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">2000+</span><br />
+            Discounts Code
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">120,000+</span><br />
+            Happy Member
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span><br />
+            Events *per year
+          </div>
+        </div>
+
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16 w3-text-light-grey">Our Price</h3>
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+              <li class="w3-padding-16">Monthly payments</li>
+              <li class="w3-padding-16">Single Car</li>
+              <li class="w3-padding-16">10 Codes of our offers only*</li>
+              <li class="w3-padding-16">2 Times OnRoad-Support</li>
+              <li class="w3-padding-16">
+                <h2>5 KD</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-half">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+              <li class="w3-padding-16">One-year payment</li>
+              <li class="w3-padding-16">Multiple Cars</li>
+              <li class="w3-padding-16">Unlimited Discounts Codes</li>
+              <li class="w3-padding-16">Endless OnRoad-Support</li>
+              <li class="w3-padding-16">
+                <h2>50 KD</h2>
+                <span class="w3-opacity">per year</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- End Grid/Pricing tables -->
+        </div>
+
+        <!-- Testimonials -->
+        <!-- <h3 class="w3-padding-24 w3-text-light-grey"></h3>
+        <img
+          src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_man_people_person_avatar_white_tone_icon_159363.png"
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"
+        />
+        <p><span class="w3-large w3-margin-right"></span> CEO.</p>
+        <p>John Doe.</p>
+        <br />
+
+        <img
+          src="https://brr.gov.mk/wp-content/uploads/2020/05/business-woman-icon-74.png"
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="w3-large w3-margin-right">Rebecca Flex.</span> ٍ
+          CEO
+        </p>
+        <p></p> -->
+        <!-- End About Section -->
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">Photos</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <img
+              src="https://files.porsche.com/filestore/galleryimage/middle-east/none/newsletter-2010-06-3-1/normal/cdf66de2-9699-43e9-b622-9bea9578f012/porsche-normal.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://files.porsche.com/filestore/image/multimedia/none/sportandevents-porscheclubs-slideshow-05/normal/a4061a22-00f4-11e8-bbc5-0019999cd470/porsche-normal.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://lh3.googleusercontent.com/proxy/LZnUwViVzET3MtWAomXshz4rzu_ShiO4L3Kn4rq52Ce6ypxPcpSpbDs1VdXD1CBCBFwQp3okBkxSt0ZR7P-6mXBb_-I64wSMpABacaQnsu2UsTaXjazHaCR264Zp_z5AO49H0aUfIaib7d8VgCDVVSQ7Cb-yu1RA00LaIvEDChkH9ZiEv_L3ZTM1E7BxVuk"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="w3-half">
+            <img
+              src="http://cms.porsche-clubs.com/PorscheClubs/pc_bahrain/pc_main.nsf/web/C5319B7176F68BF0C125714000498886/$file/pcb4.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="https://www.porscheclubgb.com/getmedia/b9d4c835-5a9a-4330-b3a3-eb6e478c81b2/Porsche_Club_GB_R25.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="http://cms.porsche-clubs.com/PorscheClubs/pc_bahrain/pc_main.nsf/web/C5319B7176F68BF0C125714000498886/$file/pcb3.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="data:image/jpeg;base64,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"
+              style="width: 100%"
+            />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="Join us">
+        <h2 class="w3-text-light-grey">Join PC Today!</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i
+              class="
+                fa fa-map-marker fa-fw
+                w3-text-white w3-xxlarge w3-margin-right
+              "
+            ></i>
+            Chicago, US
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Phone: +00 151515
+          </p>
+          <p>
+            <i
+              class="
+                fa fa-envelope fa-fw
+                w3-text-white w3-xxlarge w3-margin-right
+              "
+            >
+            </i>
+            Email: Join@PorscheClub.com
+          </p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button
+              class="w3-button w3-light-grey w3-padding-large"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css/default.asp"
+            target="_blank"
+            class="w3-hover-text-green"
+            >w3.css</a
+          >
+        </p>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+  </body>
+</html>
